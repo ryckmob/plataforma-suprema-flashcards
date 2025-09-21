@@ -98,6 +98,14 @@ export default function MobileLayout() {
             </p>
           </div>
         </div>
+
+        <div className="bg-gradient-to-br from-[#4e4381] to-[#7f4d22] w-full min-h-16 mt-3 rounded-lg p-4 flex flex-col">
+        <h1 className='text-white text-lg text-left'>Revisão Suprema</h1>
+        <span className='text-gray-200 text-md text-left'>Sua próxima revisão está pronta: <br/> 15 cards + 5 questões + 1 caso prático</span>
+        <button className='bg-[#e7e366] p-3 rounded-lg font-bold m-3'>Iniciar Revisão Suprema</button>
+      </div>
+      
+
       </div>
     </div>
   );
