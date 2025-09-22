@@ -10,6 +10,7 @@ import {
 import { ButtonCard } from './components/GridButton';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { BellNotifications } from './components/notifications';
 
 export default function MobileLayout() {
   return (
@@ -17,13 +18,11 @@ export default function MobileLayout() {
       {/* HEADER */}
       <header className="flex items-center justify-between w-full px-4 py-5 bg-gray-800 border-b border-gray-700">
         <h1 className="text-lg font-semibold text-white items-center">
-          Trajetória Concursos
+        Revisão Suprema
         </h1>
 
         <div className="flex items-center gap-6">
-          <button className="text-gray-300 text-xl hover:text-white transition">
-            <FontAwesomeIcon icon={faBell} />
-          </button>
+          <BellNotifications />
           <button className="text-gray-300 text-xl hover:text-white transition">
             <FontAwesomeIcon icon={faGear} />
           </button>
