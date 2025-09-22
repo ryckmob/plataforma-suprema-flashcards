@@ -1,11 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Dispatch, SetStateAction } from "react";
-
-export type TelaAtiva = "inicio" | "mapa" | "flashcards" | "estatisticas" | "questoes";
+import { TypeTelaAtiva } from "../types";
 
 interface QuestoesProps {
-  setTelaAtiva: Dispatch<SetStateAction<TelaAtiva>>;
+  setTelaAtiva: Dispatch<SetStateAction<TypeTelaAtiva>>;
 }
 
 export default function Questoes({ setTelaAtiva }: QuestoesProps) {

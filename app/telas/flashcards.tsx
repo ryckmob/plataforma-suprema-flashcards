@@ -1,15 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Dispatch, SetStateAction } from "react";
-
-export type TelaAtiva = "inicio" | "mapa" | "flashcards" | "estatisticas" | "questoes";
+import { TypeTelaAtiva } from "../types";
 
 interface FlashcardsProps {
-  setTelaAtiva: Dispatch<SetStateAction<TelaAtiva>>;
+  setTelaAtiva: Dispatch<SetStateAction<TypeTelaAtiva>>;
 }
 
 export default function Flashcards({ setTelaAtiva }: FlashcardsProps) {
   return (
+
     <div className="w-screen h-screen bg-gray-900 flex flex-col">
       
       <header className="flex items-center px-4 py-2 bg-[#1C2634] border-b border-gray-700 max-h-[60.28px]">

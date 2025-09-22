@@ -4,16 +4,15 @@ import { faBrain, faFile, faChartSimple, faCircleQuestion, faBell, faGear } from
 import "react-circular-progressbar/dist/styles.css";
 import { BellNotifications } from "./components/notifications";
 import { SetStateAction, useState } from "react";
-import Inicio, { TelaAtiva } from "./telas/inicio"; 
+import Inicio  from "./telas/inicio"; 
 import Flashcards from "./telas/flashcards";
 import Mapa from "./telas/mapa";
 import Estatisticas from "./telas/estatisticas";
 import Questoes from "./telas/questoes";
+import { TypeTelaAtiva } from "./types";
 
 export default function MobileLayout() {
-  const [telaAtiva, setTelaAtiva] = useState<
-    "inicio" | "mapa" | "flashcards" | "estatisticas" | "questoes"
-  >("inicio");
+  const [telaAtiva, setTelaAtiva] = useState<TypeTelaAtiva>("inicio");
 
   return (
     <div className="w-screen h-screen bg-gray-900 flex flex-col">

@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { Dispatch, SetStateAction } from 'react';
+import { TypeTelaAtiva } from "../types";
 
 interface ButtonCardProps {
   icon: IconDefinition;
@@ -8,8 +9,8 @@ interface ButtonCardProps {
   fromColor: string;
   toColor: string;
   iconColor: string;
-  setTelaAtiva: Dispatch<SetStateAction<'inicio' | 'mapa' | 'flashcards' | 'estatisticas' | 'questoes'>>;
-  tela: 'inicio' | 'mapa' | 'flashcards' | 'estatisticas' | 'questoes';
+  setTelaAtiva: Dispatch<SetStateAction<TypeTelaAtiva>>;
+  tela: TypeTelaAtiva;
 }
 
 export function ButtonCard({

@@ -3,11 +3,10 @@ import { ButtonCard } from "../components/GridButton";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import { Dispatch, SetStateAction } from "react";
 import "react-circular-progressbar/dist/styles.css";
-
-export type TelaAtiva = "inicio" | "mapa" | "flashcards" | "estatisticas" | "questoes";
+import { TypeTelaAtiva } from "../types";
 
 interface InicioProps {
-  setTelaAtiva: Dispatch<SetStateAction<TelaAtiva>>;
+  setTelaAtiva: Dispatch<SetStateAction<TypeTelaAtiva>>;
 }
 
 export default function Inicio({ setTelaAtiva }: InicioProps) {
