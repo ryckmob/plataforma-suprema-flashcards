@@ -29,7 +29,7 @@ export default function MobileLayout() {
 
       
       {telaAtiva === 'inicio' && <Inicio setTelaAtiva={setTelaAtiva} />}
-      {telaAtiva == 'flashcards' && <Flashcards setTelaAtiva={ setTelaAtiva } />}
+      {telaAtiva == 'flashcards' && <Flashcards setTelaAtiva={ setTelaAtiva } telaAtiva={telaAtiva} />}
       {telaAtiva == 'mapa' && <Mapa setTelaAtiva={ setTelaAtiva }  />}
       {telaAtiva == 'estatisticas' && <Estatisticas setTelaAtiva={ setTelaAtiva } />}
       {telaAtiva == 'questoes' && <Questoes setTelaAtiva={ setTelaAtiva } />}

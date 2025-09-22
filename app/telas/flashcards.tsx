@@ -2,12 +2,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Dispatch, SetStateAction } from "react";
 import { TypeTelaAtiva } from "../types";
+import EscolherAssunto from "./escolherAssunto";
 
 interface FlashcardsProps {
   setTelaAtiva: Dispatch<SetStateAction<TypeTelaAtiva>>;
+  telaAtiva: TypeTelaAtiva;
 }
 
-export default function Flashcards({ setTelaAtiva }: FlashcardsProps) {
+export default function Flashcards({ telaAtiva, setTelaAtiva }: FlashcardsProps) {
   return (
 
     <div className="w-screen h-screen bg-gray-900 flex flex-col">
@@ -25,7 +27,7 @@ export default function Flashcards({ setTelaAtiva }: FlashcardsProps) {
       </header>
 
       <div className="flex-1 flex items-center justify-center text-gray-400 text-lg">
-      Área de Flashcards (vazia)
+        <EscolherAssunto />
       </div>
     </div>
   );
