@@ -1,1 +1,1 @@
-export type TypeTelaAtiva = "inicio" | "mapa" | "flashcards" | "estatisticas" | "questoes" | "escolhaAssunto";
+export type TypeTelaAtiva = "inicio" | "mapa" | "flashcards" | "estatisticas" | "questoes";
