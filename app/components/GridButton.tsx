@@ -18,10 +18,10 @@ export function ButtonCard({
 }: ButtonCardProps) {
   return (
     <div
-      className={`bg-gradient-to-b ${fromColor} ${toColor} text-white p-4 rounded-lg flex flex-row gap-3 items-center`}
+      className={`bg-gradient-to-b ${fromColor} ${toColor} text-white p-5 rounded-lg flex flex-row gap-3 items-center`}
     >
       <FontAwesomeIcon icon={icon} className={`text-base ${iconColor}`} />
-      <span className="text-base">{text}</span>
+      <span className="text-md">{text}</span>
     </div>
   );
 }

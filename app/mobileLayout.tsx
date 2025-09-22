@@ -35,29 +35,29 @@ export default function MobileLayout() {
         <ButtonCard
           icon={faBrain}
           text="Mapa Mental"
-          fromColor="from-gray-700"
-          toColor="to-gray-800"
+          fromColor="from-[#172640]"
+          toColor="to-[#142039]"
           iconColor="text-gray-200"
         />
         <ButtonCard
           icon={faFile}
           text="Flashcards"
-          fromColor="from-sky-700"
-          toColor="to-sky-900"
+          fromColor="from-[#3a3265]"
+          toColor="to-[#29224a]"
           iconColor="text-sky-200"
         />
         <ButtonCard
           icon={faChartSimple}
           text="Estatísticas"
-          fromColor="from-emerald-700"
-          toColor="to-emerald-900"
+          fromColor="from-[#0f3d32]"
+          toColor="to-[#112a2a]"
           iconColor="text-emerald-200"
         />
         <ButtonCard
           icon={faCircleQuestion}
           text="Questões"
-          fromColor="from-indigo-700"
-          toColor="to-indigo-900"
+          fromColor="from-[#7a522a]"
+          toColor="to-[#583e1d]"
           iconColor="text-indigo-200"
         />
       </div>
@@ -72,8 +72,8 @@ export default function MobileLayout() {
               text={`${65}%`}
               strokeWidth={8}
               styles={buildStyles({
-                pathColor: '#FACC15', // amarelo dourado
-                trailColor: '#374151', // cinza discreto
+                pathColor: '#FACC15', 
+                trailColor: '#374151', 
                 textColor: '#FFFFFF',
                 textSize: '22px',
               })}
@@ -99,10 +99,10 @@ export default function MobileLayout() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-[#4e4381] to-[#7f4d22] w-full min-h-16 mt-3 rounded-lg p-4 flex flex-col">
+        <div className="bg-gradient-to-br from-[#16213e] to-[#7f4d22] w-full min-h-16 mt-3 rounded-lg p-4 flex flex-col">
         <h1 className='text-white text-lg text-left'>Revisão Suprema</h1>
         <span className='text-gray-200 text-md text-left'>Sua próxima revisão está pronta: <br/> 15 cards + 5 questões + 1 caso prático</span>
-        <button className='bg-[#e7e366] p-3 rounded-lg font-bold m-3'>Iniciar Revisão Suprema</button>
+        <button className='bg-[#bc853a] p-3 rounded-lg font-bold m-3'>Iniciar Revisão Suprema</button>
       </div>
       
 
