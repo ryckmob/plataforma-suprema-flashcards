@@ -16,10 +16,8 @@ export default function MobileLayout() {
   return (
     <div className="w-screen h-screen bg-gray-900 flex flex-col">
       {/* HEADER */}
-      <header className="flex items-center justify-between w-full px-4 py-5 bg-gray-800 border-b border-gray-700">
-        <h1 className="text-lg font-semibold text-white items-center">
-        Revisão Suprema
-        </h1>
+      <header className="flex items-center justify-between w-full px-4 py-2 bg-[#191f2a] border-b border-gray-700">
+        <img src="/logo.png" alt="" width={120} height={120} />
 
         <div className="flex items-center gap-6">
           <BellNotifications />
