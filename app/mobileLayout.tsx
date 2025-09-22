@@ -15,12 +15,12 @@ export default function MobileLayout() {
   return (
     <div className="w-screen h-screen bg-gray-900 flex flex-col">
       {/* HEADER */}
-      <header className="flex items-center justify-between w-full px-4 py-4 bg-gray-800 border-b border-gray-700">
-        <h1 className="text-lg font-semibold text-white">
+      <header className="flex items-center justify-between w-full px-4 py-5 bg-gray-800 border-b border-gray-700">
+        <h1 className="text-lg font-semibold text-white items-center">
           Trajetória Concursos
         </h1>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
           <button className="text-gray-300 text-xl hover:text-white transition">
             <FontAwesomeIcon icon={faBell} />
           </button>
@@ -31,7 +31,7 @@ export default function MobileLayout() {
       </header>
 
       {/* GRID DE BOTÕES */}
-      <div className="p-4 grid grid-cols-2 gap-3">
+      <div className="p-4 grid grid-cols-2 gap-3 mt-1">
         <ButtonCard
           icon={faBrain}
           text="Mapa Mental"
