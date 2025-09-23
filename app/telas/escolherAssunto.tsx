@@ -31,7 +31,7 @@ export default function UserChoice() {
   if (loading) return <p className="text-gray-300">Carregando...</p>;
 
   return (
-    <div className="p-4 w-full h-[100%] flex flex-col">
+    <div className="p-4 w-full h-[calc(100%-105.08px)] flex flex-col">
       <h2 className="text-xl font-semibold mb-4 text-white">
         Assuntos para Estudar
       </h2>
